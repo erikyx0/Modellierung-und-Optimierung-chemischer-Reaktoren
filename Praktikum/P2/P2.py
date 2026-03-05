@@ -1,4 +1,7 @@
-import csv 
+# Dieses Praktikum ist eine Einführung in Cantera
+# Ziel ist es, einen PFR für die katalytische Partialoxidation von Erdgas zu modellieren
+
+import csv
 import numpy as np 
 import matplotlib.pyplot as plt 
 import cantera as ct 
@@ -51,7 +54,7 @@ while sim.distance < length:
     sim.step()
     n += 1 
     output_data.append(
-        [dist, r.T - 273.15, r.phase.P/ct.one_atm] + list(r.phase.X) + list(rsurf.kinetics.coverages)
+        [dist, r.T - 273.15, r.thermo.P/ct.one_atm] + list(r.thermo.X) + list(rsurf.kinetics.coverages)
     )
 
 

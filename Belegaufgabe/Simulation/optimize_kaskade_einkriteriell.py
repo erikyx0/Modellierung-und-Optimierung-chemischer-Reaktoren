@@ -48,7 +48,7 @@ def main():
     max_iter = 100
 
     def callback(xk, convergence=None):
-        fx = model.objective_CH4(xk)  # besser: aus Cache holen, falls vorhanden
+        fx = model.objective_CH4(xk)
         history.append([
             len(history) + 1,  # iteration
             fx,  # CH4

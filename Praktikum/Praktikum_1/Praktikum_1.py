@@ -40,9 +40,7 @@ def callback(xk):
     if len(results) < max_iter:
         results.append(xk)
 
-solution = minimize(objective, initial_guess, method='slsqp', bounds=bounds,
-                    constraints={'type': 'ineq', 'fun': stress_constraint},
-                    callback=callback, options={'maxiter': max_iter})
+solution = minimize(objective, initial_guess, method='slsqp', bounds=bounds,constraints={'type': 'ineq', 'fun': stress_constraint},callback=callback, options={'maxiter': max_iter})
 
 Di_opt, Do_opt, L_opt = solution.x
 m_minimized  = objective(solution.x)
@@ -93,4 +91,4 @@ if plot:
     fig.tight_layout()
     plt.title('Iterative Results of Mass and Sigma')
     fig.legend(loc="upper right", bbox_to_anchor=(1,1), bbox_transform=ax1.transAxes)
-    plt.show()
+    plt.savefig('Iterative_Lösung.png', dpi=300)

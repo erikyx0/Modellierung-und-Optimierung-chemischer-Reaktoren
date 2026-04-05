@@ -1,38 +1,82 @@
-# Beleg – Modellierung und Optimierung chemischer Reaktoren
+# Modellierung und Optimierung chemischer Reaktoren
 
-Dieses Repository enthält Skripte und Ausarbeitungen, die im Rahmen des Moduls  
-**„Modellierung und Optimierung chemischer Reaktoren“** erstellt wurden.
+Dieses Repository zeigt die **Modellierung, Simulation und Optimierung chemischer Reaktoren** mit Python und Cantera.  
+Der Fokus liegt auf der **Verknüpfung physikalischer Modelle mit numerischen Methoden und Optimierungsalgorithmen**.
 
-## Inhalt
-- **Seminare**: ausgewählte Rechen- und Modellierungsaufgaben  
-- **Praktikum**: begleitende Skripte und Auswertungen  
-- **Belegarbeit**: vollständige Modellierung und Optimierungsaufgabe
+---
 
-## Inhalt und Aufbau 
-### Seminare 
-In den Seminaren sollen ausgewähle Modellierungsaufgaben sowohl mit kommerzieller, als auch mit selbst geschriebenen Skripten durchgeführt werden. Dabei wurden folgende Seminare durchgeführt:
+## Key Features
+- Modellierung eines **Plug-Flow-Reaktors (PFR)** über eine CSTR-Kaskade  
+- Simulation **gekoppelter Reaktionskinetik** (z. B. katalytische Systeme)  
+- Ein- und **multikriterielle Optimierung** (z. B. Umsatz vs. Reaktorvolumen)  
+- Integration von **Cantera** für detaillierte Stoffmodelle  
+- Analyse von **Temperatur-, Konzentrations- und Umsatzprofilen**
 
-- **Seminar 1**: Einführung Python
-- **Seminar 2**: Einführung Chemkin
-- **Seminar 3**: Einführung Fluent
-- **Seminar 4**: Einführung ModeFrontier
-- **Seminar 5**: Einführung ModeFrontier II 
-- **Seminar 6**: KI-basierte Modellierung I (Python)
-- **Seminar 7**: KI-basierte Modellierung II (Python)
+---
 
-### Praktikum 
-in den Praktika wurden begleitende Skripte zur Veranschaulichung der Lehrinhalte erstellt 
+## Technologien
+- **Python** (NumPy)
+- **Cantera**
+- **pymoo** (NSGA-II für Multiobjective Optimization)
+- **Tensorflow**
+- **scikit-learn**
 
-- **Praktikum 1**: Einführung Python-Optimierung
-- **Praktikum 2**: Einführung Cantera
-- **Praktikum 3**: Kopplung Cantera-Optimierung
+---
 
-### Belegaufgabe 
-Die Belegaufgabe umfasst 
+## Projektstruktur
+
+### Seminare
+Umsetzung ausgewählter Modellierungsansätze mit verschiedenen Tools:
+
+- Seminar 1: Python-Grundlagen  
+- Seminar 2: Chemkin  
+- Semiar 3: ANSYS Fluent  
+- Seminar 4–5: ModeFrontier  
+- Seminar 6–7: KI-basierte Modellierung (Python)
+
+---
+
+### Praktikum
+Begleitende Implementierungen zur Vertiefung:
+
+- Python-basierte Optimierung  
+- Einführung in Cantera  
+- Kopplung von Simulation und Optimierung  
+
+---
+
+### Belegarbeit
+Kern des Projekts:
+
+- Aufbau eines **PFR-Modells als CSTR-Kaskade**
+- Simulation eines **reaktiven Systems mit detaillierter Kinetik**
+- Durchführung von:
+  - **Single-Objective Optimization**
+  - **Multi-Objective Optimization (Pareto-Fronten)**
+
+---
+
+## Ergebnisse
+Typische Auswertungen:
+
+- Pareto-Fronten (z. B. Umsatz vs. Reaktorvolumen)  
+- Temperaturprofile entlang des Reaktors  
+- Einfluss von Betriebsparametern auf Reaktionsverlauf  
+
+*(Plots und Ergebnisse können im Repository eingesehen werden)*
+
+---
+
+## Motivation
+Ziel ist die Entwicklung eines **daten- und modellgetriebenen Ansatzes** zur Beschreibung chemischer Prozesse.  
+Der Fokus liegt auf:
+- physikalisch fundierter Modellierung  
+- effizienter numerischer Umsetzung  
+- systematischer Optimierung komplexer Systeme  
+
+---
 
 ## Hinweise
-- Die Skripte wurden primär für Lehrzwecke erstellt und sind nicht als
-  allgemeingültige Simulationssoftware gedacht.
-- Teile der Seminare wurden in kommerzieller Software durchgeführt und sind
-  daher hier nicht enthalten.
-
+- Die Inhalte wurden im Rahmen eines Universitätsmoduls erstellt  
+- Fokus liegt auf **Methodenverständnis und Modellierung**, nicht auf produktionsreifer Software  
+- Teile (z. B. kommerzielle Software) sind nicht im Repository enthalten  

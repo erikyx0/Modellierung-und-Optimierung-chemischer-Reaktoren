@@ -99,4 +99,5 @@ for idx, (name, y_pred) in enumerate(predictions.items()):
     axes[idx].set_title(f"{name}")
     axes[idx].grid()
 
-plt.show(dpi=700)
+plt.savefig(f"Ergebnisse.png", dpi=700)
+#plt.show()

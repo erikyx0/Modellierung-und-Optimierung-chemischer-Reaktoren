@@ -18,8 +18,8 @@ colors = [
     "#7d7d7d",
 ]
 
-df_pareto = pd.read_csv("pareto_CH4_vs_Vcat.csv")
-df_all = pd.read_csv("all_evaluated_points.csv")
+df_pareto = pd.read_csv("data/pareto_CH4_vs_Vcat.csv")
+df_all = pd.read_csv("data/all_evaluated_points.csv")
 
 pareto_ch4_out = df_pareto["CH4_out"]
 all_ch4_out    = df_all["CH4_out"]
@@ -98,5 +98,5 @@ axins.grid()
 # Verbindung Hauptplot ↔ Zoom
 mark_inset(ax, axins, loc1=2, loc2=4, fc="none", ec="0.4")
 
-plt.show()
-#plt.savefig("img/Pareto_front_zoom", dpi=500)
+#plt.show()
+plt.savefig("img/Pareto_front_zoom", dpi=500)

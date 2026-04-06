@@ -63,7 +63,12 @@ Typische Auswertungen:
 - Temperaturprofile entlang des Reaktors  
 - Einfluss von Betriebsparametern auf Reaktionsverlauf  
 
-*(Plots und Ergebnisse können im Repository eingesehen werden)*
+<p align="left">
+  <img src="Belegaufgabe/Auswertung/img/Pareto_front_zoom.png" width="50%">
+  <br>
+  <em>Pareto-Optimierung: CH₄ vs. Katalysatorvolumen</em>
+</p>
+*(weitere Plots und Ergebnisse können im Repository eingesehen werden)*
 
 ---
 

@@ -150,5 +150,5 @@ plt.legend(handles=legend_elements, loc='upper right', fontsize=10)
 
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
-plt.show()
+plt.savefig("Plot_Results.png", dpi=500)
 
